@@ -1,5 +1,8 @@
 #reader(lib "htdp-beginner-reader.ss" "lang")((modname Exercise-1) (read-case-sensitive #t) (teachpacks ()) (htdp-settings #(#t constructor repeating-decimal #f #t none #f () #f))) 
 
+(define (square x)
+(* x x))
+
 (define (sqrt-iter guess x)
 (if (good-enough? guess (improve guess x))
     guess
@@ -18,7 +21,5 @@
 ; but i can use 0.001% which will do better
 
 
-(define (square x)
-(* x x))
 
 (exact->inexact (sqrt-iter 2.0 5000))

@@ -9,9 +9,9 @@
 (define b (+ a 1))
 
 (+ a b (* a b))
-#;19   
+;19   
 (= a b)
-#;false
+;false
 
 (if (and (> b a)(< b (* a b)))
 b
